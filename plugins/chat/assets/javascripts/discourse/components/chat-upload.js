@@ -42,6 +42,10 @@ export default class extends Component {
     return { width: width * ratio, height: height * ratio };
   }
 
+  get imageUrl() {
+    return this.args.upload.thumbnail?.url ?? this.args.upload.url;
+  }
+
   get imageStyle() {
     if (this.args.upload.dominant_color && !this.loaded) {
       return htmlSafe(`background-color: #${this.args.upload.dominant_color};`);
