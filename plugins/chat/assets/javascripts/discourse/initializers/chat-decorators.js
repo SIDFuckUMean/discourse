@@ -160,7 +160,7 @@ export default {
         },
         callbacks: {
           elementParse: (item) => {
-            item.src = item.el[0].src;
+            item.src = item.el[0].dataset.origSrc || item.el[0].src;
           },
         },
       });
