@@ -1,7 +1,7 @@
 # This workflow is designed to stop us accidently committing the lockfile/packagejson symlink changes
 # which would cause the default Ember version to change.
 
-name: Ember Version Enforcement
+nme
 
 on:
   pull_request:
